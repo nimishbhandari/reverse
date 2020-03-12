@@ -1,0 +1,119 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-image: url('123-1235712_hd-wallpaper-4k-minimalist-wallpaper-phone.jpg');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.show
+{
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    height: 100vh;
+}
+.header
+{
+    font-size: 40px;
+    text-align: center;
+    padding:10px;
+    background: rgba(0, 0, 0, 0.544);
+}
+.hint
+{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px ;
+    padding: 11px;
+}
+.word
+{
+    margin: 10px;
+    padding: 20px;
+    font-size: 70px;
+    text-align: center;
+}
+.input
+{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+}
+.start
+{
+    position: relative;
+    left: 36%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.436);
+    color: #fff;
+    margin: 20px;
+    font-size: 20px;
+    border-style: none;
+}
+.start:hover
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.gameover
+{
+    background: rgba(0, 0, 0, 0.96);
+    border: solid;
+    position: absolute;
+    left: 25%;
+    top: 23%;
+    height: 100px;
+    width: 150px;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    visibility: hidden;
+}
+.result
+{
+    border-style: hidden;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 20px;
+    margin: 0px 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.rules
+{
+    margin: 0px 70px;
+    padding:0px;
+    font-size: 20px;
+    background: rgba(128, 128, 128, 0.604);
+    padding: 10px;
+}
+.rules1
+{
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
+    font-size: 30px;
+}
+.rules2
+{
+    margin: 0px 10px ;
+    padding: 10px;
+}
+.message1
+{
+    text-align: center;
+    font-size: 30px;
+    color:yellow;
+}
