@@ -46,7 +46,13 @@ const words =
     'magic',
     'master',
     'space',
-    'define'
+    'define',
+    'makes',
+    'joker',
+    'php',
+    'script',
+    'exam',
+    
   ];
 
 function init() 
