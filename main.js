@@ -84,8 +84,13 @@ function reverseString(str)
   return str.split("").reverse().join("");
 }
 
+function LowerCase(string)
+{
+  return string.toLowerCase();
+}
+
 function matchWords() {
-  if (wordInput.value === reverseString(currentWord.innerHTML)) 
+  if (LowerCase(wordInput.value) === reverseString(currentWord.innerHTML)) 
   {
     message.innerHTML = 'Correct!!!';
     return true;
