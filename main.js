@@ -125,7 +125,7 @@ function checkStatus()
 {
   if (!isPlaying && time === 0) 
   {
-    message.innerHTML = 'Game Over!!!';
+    gameover.innerHTML = 'Game Over!!!';
     score = -1;
   }
 }
