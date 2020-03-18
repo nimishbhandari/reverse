@@ -1,4 +1,5 @@
 document.getElementById("start").addEventListener("click", init);
+
 const levels =
 {
   easy: 4,
@@ -11,7 +12,6 @@ const currentLevel = levels.medium;
 let time = currentLevel;
 let score = 0;
 let isPlaying;
-
 
 const wordInput = document.querySelector('#word-input');
 const currentWord = document.querySelector('#current-word');
@@ -52,11 +52,9 @@ const words =
     'php',
     'script',
     'exam',
-    
   ];
 
-function init() 
-{
+function init() {
   seconds.innerHTML = currentLevel;
   showWord(words);
   wordInput.addEventListener('input', startMatch);
@@ -65,73 +63,60 @@ function init()
   document.getElementById("start").style.visibility = "hidden"
 }
 
-function startMatch() 
-{
-  if (matchWords()) 
-  {
+function startMatch() {
+  if (matchWords()) {
     isPlaying = true;
     time = currentLevel + 1;
     showWord(words);
     wordInput.value = '';
     score++;
   }
-  if (score === -1) 
-  {
+  if (score === -1) {
     scoreDisplay.innerHTML = 0;
   }
-  else 
-  {
+  else {
     scoreDisplay.innerHTML = score;
   }
 }
 
-function reverseString(str) 
-{
+function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
-function LowerCase(string)
-{
+function LowerCase(string) {
   return string.toLowerCase();
 }
 
 function matchWords() {
-  if (LowerCase(wordInput.value) === reverseString(currentWord.innerHTML)) 
-  {
+  if (LowerCase(wordInput.value) === reverseString(currentWord.innerHTML)) {
     message.innerHTML = 'Correct!!!';
     return true;
   }
-  else 
-  {
+  else {
     message.innerHTML = '';
     return false;
   }
 }
 
-function showWord(words) 
-{
+function showWord(words) {
   const randIndex = Math.floor(Math.random() + Math.random() * words.length);
   currentWord.innerHTML = reverseString(words[randIndex]);
 }
 
-function countdown() 
-{
-  if (time > 0) 
-  {
+function countdown() {
+  if (time > 0) {
     time--;
   }
-  else if (time === 0) 
-  {
+  else if (time === 0) {
     isPlaying = false;
   }
   timeDisplay.innerHTML = time;
 }
 
-function checkStatus() 
-{
-  if (!isPlaying && time === 0) 
-  {
-    gameover.innerHTML = 'Game Over!!!';
+function checkStatus() {
+  if (!isPlaying && time === 0) {
+    gameover.innerHTML = 'Game Over!!!<br> <button class="stop" id="stop" onCLick="location.reload()">Restart</button>';
     score = -1;
   }
 }
+
