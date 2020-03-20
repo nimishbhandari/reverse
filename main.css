@@ -68,14 +68,14 @@ body
     border-style: hidden;
     background: rgba(0, 0, 0, 0.76);
     padding: 20px;
-    margin: 0px 50px;
+    margin: 10px 50px;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 30px;
 }
 .rules
 {
-    margin: 0px ;
+    margin: 20px 0px ;
     padding:0px;
     font-size: 20px;
     background: rgb(80, 79, 79);
@@ -94,6 +94,7 @@ body
 {
     margin: 20px 10px ;
     padding: 10px;
+    text-align: center;
 }
 .message1
 {
